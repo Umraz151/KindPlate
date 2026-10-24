@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Two smiling people sharing a plate of food</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#789779"/>
+      <stop offset="1" stop-color="#365844"/>
+    </linearGradient>
+    <linearGradient id="shirt-left" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f4bd82"/>
+      <stop offset="1" stop-color="#dc8a59"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#background)"/>
+  <!-- giver -->
+  <circle cx="14" cy="18" r="8" fill="#f3c49d"/>
+  <path d="M7 17c0-8 13-10 15-1-4-2-8-3-15 1Z" fill="#553d35"/>
+  <circle cx="11.5" cy="19" r="1.1" fill="#3c302d"/><circle cx="17" cy="19" r="1.1" fill="#3c302d"/>
+  <path d="M11 23c2 2 4 2 6 0" fill="none" stroke="#9d4e45" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M3 57c1-13 5-19 11-19 5 0 10 6 11 19Z" fill="url(#shirt-left)"/>
+  <!-- receiver -->
+  <circle cx="50" cy="18" r="8" fill="#d99568"/>
+  <path d="M42 17c1-9 13-10 16-2-5-3-10-2-16 2Z" fill="#292e2d"/>
+  <circle cx="47.5" cy="19" r="1.1" fill="#312a29"/><circle cx="53" cy="19" r="1.1" fill="#312a29"/>
+  <path d="M47 23c2 2 4 2 6 0" fill="none" stroke="#82433c" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M39 57c1-13 5-19 11-19 5 0 10 6 11 19Z" fill="#dce8db"/>
+  <!-- shared plate and food -->
+  <path d="M20 38c5 2 19 2 24 0" fill="none" stroke="#f4c49b" stroke-width="3.5" stroke-linecap="round"/>
+  <ellipse cx="32" cy="38" rx="14" ry="6" fill="#fffaf0"/>
+  <ellipse cx="32" cy="36.5" rx="10.5" ry="4" fill="#e5a263"/>
+  <path d="M24 36c1-4 4-5 6-2 2-4 5-3 6 1 3-2 5 0 5 2H24Z" fill="#c96843"/>
+  <circle cx="28" cy="35" r="1.4" fill="#789653"/><circle cx="36" cy="34" r="1.4" fill="#789653"/>
+  <path d="M29 29c2-2 4-2 6 0" fill="none" stroke="#f1c17d" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

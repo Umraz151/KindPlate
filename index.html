@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Share surplus food with people who need it." />
+  <title>KindPlate | Share food. Share kindness.</title>
+  <link rel="icon" type="image/jpeg" href="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=128&h=128&q=90" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="KindPlate home">
+      <img class="brand-icon" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=128&h=128&q=90" alt="" />
+      <span>kind<span>plate</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#find-food">Find food</a>
+      <a href="#share-food">Share food</a>
+      <a href="#how-it-works">How it works</a>
+    </nav>
+    <button class="outline-button header-cta" data-scroll-to="share-food">Share a meal <span>→</span></button>
+    <button class="menu-button" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Good food deserves a good home</div>
+        <h1>Share food.<br /><em>Share kindness.</em></h1>
+        <p class="hero-text">KindPlate connects people with extra food to neighbors who need it. Together, we can make sure no good meal goes to waste.</p>
+        <div class="hero-actions">
+          <button class="primary-button" data-scroll-to="find-food">Find food near you <span>→</span></button>
+          <button class="text-button" data-scroll-to="share-food">I have food to share <span>↗</span></button>
+        </div>
+        <div class="trust-line"><div class="avatar-stack"><span>AS</span><span>RK</span><span>MN</span><span>+</span></div><span>Join <strong>2,400+</strong> kind neighbors</span></div>
+      </div>
+      <div class="hero-art" aria-label="A shared meal being offered to someone who needs it">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=88" alt="Fresh shared food on a table" />
+        <div class="hero-photo-shade"></div>
+        <div class="hero-label"><span>✦</span> Good food, shared locally</div>
+        <div class="hero-note"><span>✦</span><strong>5,128</strong><small>meals shared</small></div>
+      </div>
+    </section>
+
+    <section class="impact-strip" aria-label="KindPlate impact">
+      <div><strong>5,128</strong><span>meals shared</span></div>
+      <div><strong>1,842 kg</strong><span>food kept from waste</span></div>
+      <div><strong>2,400+</strong><span>kind neighbors</span></div>
+      <div><strong>18</strong><span>local communities</span></div>
+    </section>
+
+    <section class="section find-section" id="find-food">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-dot"></span> For people who need a meal</div><h2>Find food near you</h2></div>
+        <button class="text-button" id="view-all">View all meals <span>→</span></button>
+      </div>
+      <div class="search-bar">
+        <span class="search-icon">⌕</span>
+        <input id="search-input" type="search" placeholder="Search by meal, location, or dietary need..." />
+        <select id="category-filter" aria-label="Filter food">
+          <option value="all">All food</option>
+          <option value="vegetarian">Veg</option>
+          <option value="vegan"> non-Veg</option>
+          <option value="baked">Backed items</option>
+        </select>
+      </div>
+      <div class="meal-grid" id="meal-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>No meals match your search yet. Try another search.</div>
+    </section>
+
+    <section class="section how-section" id="how-it-works">
+      <div class="center-heading"><div class="eyebrow"><span class="eyebrow-dot"></span> Simple by design</div><h2>Good things happen<br />when we share.</h2></div>
+      <div class="steps">
+        <article class="step"><div class="step-number">01</div><div class="step-icon">♧</div><h3>Someone shares</h3><p>Have extra food? Post what you have, where it is, and when it can be collected.</p></article>
+        <article class="step"><div class="step-number">02</div><div class="step-icon people-icon" aria-label="One person giving food to another person"><i></i><b></b><span>♡</span></div><h3>A neighbor books it</h3><p>People nearby find a meal, reserve it, and receive the donor’s pickup contact.</p></article>
+        <article class="step"><div class="step-number">03</div><div class="step-icon">♡</div><h3>Food finds a home</h3><p>Connect safely, arrange a pickup, and turn surplus into a shared moment.</p></article>
+      </div>
+    </section>
+
+    <section class="share-section section" id="share-food">
+      <div class="share-copy"><div class="eyebrow light"><span class="eyebrow-dot"></span> For people with food to give</div><h2>Got more than<br />you can eat?</h2><p>Whether it’s a family meal, fresh produce, or a bakery’s end-of-day surplus — someone nearby would be grateful.</p><div class="mini-proof"><span>✦</span> Every meal shared makes a difference.</div></div>
+      <form class="share-form" id="share-form">
+        <div class="form-title"><span>Share a meal</span><small>It takes less than a minute</small></div>
+        <label>What are you sharing?<input required name="food" placeholder="e.g. Vegetable biryani, 5 portions" /></label>
+        <label>Food category<select required name="type"><option value="vegetarian">Vegetarian</option><option value="vegan">Vegan</option><option value="baked">Baked goods</option></select><small class="field-help">We’ll add a matching stock image to help neighbors recognize the meal.</small></label>
+        <label>Your mobile number<input required name="phone" type="tel" inputmode="numeric" pattern="[0-9+\-\s]{10,15}" placeholder="e.g. 98765 43210" /><small class="field-help">Only shared with the person who books your meal.</small></label>
+        <div class="form-row"><label>Pickup area<input required name="area" placeholder="e.g. Indiranagar" /></label><label>Available until<input required name="until" type="time" /></label></div>
+        <label>Anything else to know? <span class="optional">Optional</span><textarea name="notes" rows="2" placeholder="Allergen info, container details..."></textarea></label>
+        <button class="primary-button full" type="submit">Post this meal <span>→</span></button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><img class="brand-icon" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=128&h=128&q=90" alt="" /><span>kind<span>plate</span></span></a><span>Made with care for people & planet.</span><span>© 2024 KindPlate</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
